@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ByTimeGone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fragment_alarm_clock_title">闹钟</string>
+    <string name="fragment_world_time_title">世界时间</string>
+    <string name="fragment_chronograph_title">秒表</string>
+    <string name="fragment_timer_title">定时器</string>
 </resources>

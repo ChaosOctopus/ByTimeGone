@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/shell_tabs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/main_color"
+            app:tabTextColor="@color/color_999999"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/shell_viewpager"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/shell_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

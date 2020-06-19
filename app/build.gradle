@@ -7,8 +7,8 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsVersion
-    dataBinding{
-        enabled = true
+    buildFeatures{
+        dataBinding = true
     }
     defaultConfig {
         applicationId "com.time.wistimegone"
@@ -60,6 +60,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlinVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
+    implementation "androidx.legacy:legacy-support-v4:$rootProject.legacyVersion"
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
     //test
